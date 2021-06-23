@@ -1,0 +1,39 @@
+<!--pages/发帖/发帖.wxml-->
+<view>
+  <form >
+    <view class="setting">
+      <view class="text">标题</view> 
+      <view class="contain">
+        <input type="text" name="title"  placeholder="快来输入标题吧！" bindinput="titleinput" />
+      </view>
+      </view>
+    <view>
+      <textarea name="feedback"  bindinput="contentinput" class="textarea" auto-height placeholder="快来发帖吧！" />
+    </view>
+  <view class="setting">
+    <view align='center' class="text"> 选择图片</view>
+      <image wx:for="{{urlArr}}" id="{{index}}"  bindtap="removeimg" class="img" src="{{item}}"  />
+      <image class="img" wx:if="{{urlArr.length!=9}}" style="border:none" src="../images/add.png" bindtap="addimg" />
+    </view>
+
+  <view class='indexFlexBoxTitle' class="setting">
+    <view class="text">分类</view>
+    <picker mode="selector" range="{{array}}" value="{{index}}" bindchange="changeValue" >
+    <text class="picker" >{{array[index]}}</text>
+    </picker>
+  </view>
+  
+  <view class="setting" >
+      <view class="text">联系方式</view> 
+      <view class="contain">
+        <input type="number" name="tel" bindinput="telinput" placeholder="请输入QQ或者vx！"  class="setting-input" />
+      </view>
+    </view>
+  </form>
+</view> 
+
+  <view class="btn-area">
+    <button type="submit" class=".submit" bindtap="post">发布</button>
+  </view>
+
+

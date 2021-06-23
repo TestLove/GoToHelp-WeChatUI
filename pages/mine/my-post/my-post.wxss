@@ -1,0 +1,12 @@
+/* pages/mine/my-post/my-post.wxss */
+.one{
+  display: flex;
+}
+.box{
+  display: inline-block;
+  width: 150px;
+  color: rgba(0, 22, 63, 0.801);
+}
+.right{
+  text-align: right;
+}

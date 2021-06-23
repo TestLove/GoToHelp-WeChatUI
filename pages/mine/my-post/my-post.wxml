@@ -1,0 +1,19 @@
+<!--pages/mine/my-post/my-post.wxml-->
+<!-- 结果展示 -->
+<form>
+  <view wx:for="{{list.data.data}}" wx:key="index" ><!-- 取到list里面的内容并且进行循环 -->
+    <view class="showpost">
+      <view class="showtitle">{{item.postTitle}}</view>
+      <view class="showcontent">#{{item.type}}#{{item.postContents}}</view>
+      <view class="showtel">联系方式：{{item.contact}}</view>
+      <view wx:for="{{item.fileUrl}}" wx:key="index">
+        <image src="{{item}}" class="showimg" mode='aspectFit' ></image>
+      </view>
+      <view class="box" catchtap="delete" data-postId="{{item.postId}}">删除</view>
+      <view class="right box" catchtap="update" data-postid="{{item.postId}}" data-posttitle="{{item.postTitle}}" data-postcontents="{{item.postContents}}" data-contact="{{item.contact}}" data-type="{{item.type}}">修改</view>
+    </view>
+  </view>
+  <view class="end">
+    我也是有底线的~
+  </view>
+</form>

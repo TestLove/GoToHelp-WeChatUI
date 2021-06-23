@@ -1,0 +1,80 @@
+<!--pages/index/index.wxml-->
+<navigator url="../search/search">
+  <view class="head" >
+    <input type="search" name="keyword" placeholder="请输入关键字" class="search"/>
+    <button bindtap="formSubmit" class="search-button">搜索</button>
+  </view>
+</navigator>
+
+<!--轮播图-->
+<view>
+ <swiper autoplay="true" indicator-dots="true">
+     <swiper-item>
+       <image src="../images/轮播图1.jpg" style="width:100%;height:500rpx"/>
+     </swiper-item>
+     <swiper-item>
+       <image src="../images/轮播图2.jpg" style="width:100%;height:500rpx"/>
+     </swiper-item>
+     <swiper-item>
+       <image src="../images/轮播图3.jpg" style="width:100%;height:500rpx"/>
+     </swiper-item>
+  </swiper>
+</view>
+<!--导航块-->
+<view class="head"> 
+  <!--失物招领-->
+  <view class="classes" >
+    <navigator url="../classes/lost/lost">
+      <view ><image mode="aspectFit" src="../../icon/失物招领.png" class=".img"/>
+      </view>  
+    </navigator>
+    <view class=".classes-text"><text>失物招领</text></view>
+  </view>
+  <!--寻物启事-->
+  <view class="classes">
+    <navigator url="../classes/found/found">
+      <view><image mode="aspectFit" src="../../icon/寻物.png" class=".img"/></view>
+      <view class=".classes-text"><text>寻物启事</text></view>
+    </navigator>
+  </view>
+  <!--二手交易-->
+  <view class="classes">
+    <navigator url="../classes/second-hand/second-hand">
+      <view><image mode="aspectFit" src="../../icon/二手物品.png" class=".img"/></view>
+      <view class=".classes-text"><text>二手交易</text></view>
+    </navigator>
+  </view>
+  <!--活动组队-->
+  <view class="classes">
+    <navigator url="../classes/make-team/make-team">
+      <view><image mode="aspectFit" src="../../icon/组队.png" class=".img"/></view>
+      <view class=".classes-text"><text>活动组队</text></view>
+    </navigator>
+  </view>
+  <!--拼车-->
+  <view class="classes">
+    <navigator url="../classes/car-sharing/car-sharing">
+      <view><image mode="aspectFit" src="../../icon/拼车.png" class=".img"/></view>
+      <view class=".classes-text"><text>拼车</text></view>
+    </navigator>
+  </view>
+  
+</view>
+<!-- 结果展示 -->
+<form>
+  <view wx:for="{{list}}" wx:key="index" ><!-- 取到list里面的内容并且进行循环 -->
+    <view class="showpost">
+      <view class="showtitle">{{item.postTitle}}</view>
+      <view class="showcontent">#{{item.type}}#{{item.postContents}}</view>
+      <view class="showtel">联系方式：{{item.contact}}</view>
+      <view wx:if="{{hasfileUrl}}">
+        <view wx:for="{{item.fileUrl}}" wx:key="index" wx:for-index="fdex"  bindtap='preview' data-index="{{index}} ">
+          <image src="{{item}}" class="showimg" mode='aspectFit' data-src="{{item}}"   ></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="end">
+    我也是有底线的~
+  </view>
+</form>

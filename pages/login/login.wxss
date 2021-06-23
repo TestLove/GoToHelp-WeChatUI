@@ -1,0 +1,13 @@
+.container{
+  margin: 50px;
+}
+.userinfo-avatar{
+  height: 130px;
+  width: 130px;
+  margin: 0 50px;
+}
+.userinfo-nickname{
+  text-align: center;
+  width: 100%;
+  margin: 20px 0;
+}

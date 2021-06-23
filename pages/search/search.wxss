@@ -1,0 +1,23 @@
+/* pages/search/search.wxss */
+.showpost{
+  width: 90%px;
+  height: 200px;
+  background-color: rgb(205, 238, 247);
+  padding: 10rpx,10rpx,10rpx,10rpx;
+  border: 5px solid #6ab9dd;
+}
+.showtitle{
+  font-size: x-large;
+}
+.showimg{
+  height: 100px;
+}
+.showtel{
+  font-size: x-small;
+  color: rgb(247, 96, 96);
+}
+.end{
+  font-size: small;
+  color: #a9aeb3e8;
+  text-align: center;
+}

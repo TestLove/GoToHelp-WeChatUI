@@ -1,0 +1,60 @@
+<!--pages/mine/mine.wxml-->
+<view class="bg">
+  <view class="head">
+     <view class="page-body-info">
+      <image class="userinfo-avatar" src="{{avatarUrl}}"></image>
+      <text class="userinfo-nickname">{{nickName}}</text>
+    </view>
+  </view>
+</view>
+ 
+<view class="hr"></view>
+<view class="line"></view>
+ 
+<view class='item'>
+<navigator url="../mine/help/help">
+  <view class="head">
+    <view class="title">使用帮助</view>
+    <view class="detail2">
+      <text>></text>
+    </view>
+  </view>
+</navigator> 
+</view>
+ 
+<view class="hr"></view>
+<view class="line"></view>
+
+<view class='item'>
+<navigator url="../mine/my-post/my-post">
+  <view class="head">
+    <view class="title" >我的帖子</view>
+    <view class="detail2">
+      <text>></text>
+    </view>
+  </view>
+</navigator> 
+</view>
+
+<view class="hr"></view>
+<view class="line"></view>
+
+<view class="line"></view>
+<view class='item'>
+<navigator url="../mine/suggest/suggest">
+  <view class="head">
+    <view class="title">意见反馈</view>
+    <view class="detail2">
+      <text>></text>
+    </view>
+  </view>
+</navigator> 
+</view>
+
+<view class="hr"></view>
+<view class="line"></view>
+
+<view>
+  <button bindtap="exit">退出</button>
+</view>
+

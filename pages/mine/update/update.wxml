@@ -1,0 +1,29 @@
+<!--pages/mine/update/update.wxml-->
+<view>
+  <form >
+    <view class="setting">
+      <view class="text">标题</view> 
+      <view class="contain">
+        <input type="text" name="title"  value="{{posttitle}}" bindinput="titleinput" />
+      </view>
+      </view>
+    <view>
+      <textarea name="feedback"  bindinput="contentinput" class="textarea" auto-height value="{{postcontents}}" />
+    </view>
+
+  <view class="setting">
+    <view class="text">分类：{{type}}</view>
+  </view>
+  
+  <view class="setting" >
+      <view class="text">联系方式</view> 
+      <view class="contain">
+        <input type="number" name="tel" bindinput="telinput" value="{{contact}}" class="setting-input" />
+      </view>
+    </view>
+  </form>
+</view> 
+
+  <view class="btn-area">
+    <button type="submit" class=".submit" bindtap="post">发布</button>
+  </view>

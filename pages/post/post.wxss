@@ -1,0 +1,81 @@
+/* pages/发帖/发帖.wxss */
+.section{
+  font-size: 15px;
+}
+
+.btn-area {
+  padding: 0 30px;
+}
+
+.section__title {
+  padding: 0 !important;
+}
+
+input {
+  width: 600rpx;
+  border-bottom: 1px solid gainsboro !important;
+  margin-bottom: 25rpx;
+}
+
+.textarea {
+  width: 600rpx;
+  border: 1px solid gainsboro;
+  min-height: 100px;
+  margin:auto;
+}
+
+.img {
+  padding: 10px 10px 10px 10px;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background-color: white;
+  border: 1px solid gainsboro;
+}
+.submit{
+  background-color:#6ab9dd;
+  color:white !important;
+
+}
+
+.indexFlexBoxTitle {
+  padding: 15px;
+  text-align: left;
+  font-size: 15px;
+}
+
+.picker{
+  margin-left: 95rpx;
+  padding: 3px 5px;
+  color: #09bb07;
+  align-items: center;
+  font-size: small;
+}
+.text{
+  font-size: small;
+  text-align: center;
+  margin-left: 40rpx;
+}
+
+.setting{
+  margin: 20rpx;
+  padding: 5rpx,5rpx;
+  display: flex;
+  align-items: center;
+  font-size: small;
+}
+.contain{
+  width: 65%;
+  margin:auto;
+}
+.contain input{
+  margin: auto;
+  width: 100%;
+}
+.head{
+  display: flex;
+}
+.setting-input{
+  width: 100%;
+  margin: 0 auto;
+}

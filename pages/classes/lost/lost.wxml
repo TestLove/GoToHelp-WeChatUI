@@ -1,0 +1,25 @@
+<!--pages/classes/lost/lost.wxml-->
+ <navigator url="../../search/search?type=失物招领">
+  <view class="head">
+    <input type="search" name="keyword" placeholder="请输入关键字" class="search"/>
+    <button  class="search-button">搜索</button>
+  </view> 
+ </navigator> 
+
+<!-- 结果展示 -->
+<form>
+  <view wx:for="{{list}}" wx:key="index" ><!-- 取到list里面的内容并且进行循环 -->
+    <view class="showpost">
+      <view class="showtitle">{{item.postTitle}}</view>
+      <view class="showcontent">#{{item.type}}#{{item.postContents}}</view>
+      <view class="showtel">联系电话：{{item.contact}}</view>
+      <view wx:for="{{item.fileUrl}}" wx:key="index" wx:for-index="fdex"  bindtap='preview' data-index="{{index}} ">
+          <image src="{{item}}" class="showimg" mode='aspectFit' data-src="{{item}}"   ></image>
+      </view>
+      
+    </view>
+  </view>
+  <view class="end">
+    我也是有底线的~
+  </view>
+</form>

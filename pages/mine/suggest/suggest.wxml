@@ -1,0 +1,3 @@
+<!--pages/mine/suggest/suggest.wxml-->
+<text>如遇问题，请扫描二维码填写</text>
+<image src="../../images/反馈.jpg"></image>

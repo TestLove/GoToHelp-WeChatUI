@@ -1,0 +1,14 @@
+<!--pages/mine/help/help.wxml-->
+<view class=".title">帮助文档</view>
+<view class="title1">一、失物招领 & 寻物启事</view>
+<view class="text">请大家写清在何时、何地的什么物品以及联系方式</view>
+<view class="hr"></view>
+<view class="title1">二、二手交易</view>
+<view class="text">请大家写清物品的情况以及联系方式</view>
+<view class="hr"></view>
+<view class="title1">三、活动组队 & 拼车</view>
+<view class="text">请大家写清开始时间和截止时间以及联系方式</view>
+<view class="hr"></view>
+<view class="title1">四、注意事项</view>
+<view class="text">1、图片的显示方面，一种是没有图片，另一种是只有一张图片，也就是目前只能最多显示一张图片。</view>
+<view class="text">2、修改帖子方面，只能修改“标题”“内容”“联系方式”</view>
